@@ -1,0 +1,29 @@
+/* Defines a class for a set of buttons, likely related to an ocarina-themed UI or interaction. */
+.ocarina-buttons {
+  /* Displays the buttons in a row (horizontal) and centers them horizontally. */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers the buttons vertically. */
+  gap: 40px; /* Sets the gap between buttons to 40px. */
+}
+
+/* Styles for images within the .ocarina-buttons class. */
+.ocarina-buttons img {
+  height: 40px; /* Sets the height of the images to 40px. */
+  cursor: pointer; /* Changes the cursor to a pointer on hover, indicating interactivity. */
+  transition: transform 0.1s, opacity 0.15s; /* Adds smooth transitions for transform and opacity changes. */
+  user-select: none; /* Prevents users from selecting the image text. */
+  opacity: 0.9; /* Sets the initial opacity of the images to 0.9. */
+  border-radius: 100%; /* Rounds the corners of the images, making them circular. */
+}
+
+/* Styles for images within .ocarina-buttons class on hover. */
+.ocarina-buttons img:hover {
+  opacity: 1; /* Increases the opacity to 1 (fully opaque) on hover. */
+}
+
+/* Styles for images within .ocarina-buttons class when clicked. */
+.ocarina-buttons img:active {
+  transform: scale(0.85); /* Scales down the image by 15% on click, creating a "pressed" effect. */
+  opacity: 0.45; /* Reduces the opacity to 0.45 on click. */
+}

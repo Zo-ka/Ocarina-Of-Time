@@ -1,0 +1,63 @@
+/* Styles for a container with the class .ocarina-display */
+.ocarina-display {
+  display: flex; /* Uses flexbox for layout. */
+  flex-direction: column; /* Arranges flex items in a column layout. */
+  justify-content: center; /* Vertically centers content within the container. */
+  gap: 20px; /* Sets the gap between child elements to 20px. */
+  height: 150px; /* Sets the height of the container to 150px. */
+  width: 500px; /* Sets the width of the container to 500px. */
+  position: relative; /* Establishes a positioning context for child elements. */
+  margin-bottom: 30px; /* Adds 30px of margin at the bottom of the container. */
+  overflow: hidden; /* Hides overflowing content. */
+}
+
+/* Styles for elements with the class .stave-image */
+/* Positioned absolutely to appear above other elements */
+.stave-image {
+  position: absolute; /* Positioned absolutely within its containing element. */
+}
+
+/* Styles for elements with the class .stave */
+.stave {
+  align-self: flex-end; /* Aligns the stave to the flex end of its parent. */
+  display: flex; /* Uses flexbox for layout. */
+  align-items: center; /* Vertically centers content within the stave. */
+  justify-content: flex-end; /* Aligns content to the flex end of the stave. */
+  position: absolute; /* Positioned absolutely within its containing element. */
+  height: 80%; /* Sets the height of the stave to 80% of its containing element. */
+  width: 80%; /* Sets the width of the stave to 80% of its containing element. */
+  overflow: hidden; /* Hides overflowing content. */
+  white-space: nowrap; /* Prevents wrapping of inline elements. */
+}
+
+/* Styles for elements with the class .line (stave lines) */
+.line {
+  width: 100%; /* Sets the width of stave lines to 100% of their containing element. */
+  height: 5px; /* Sets the height of stave lines to 5px. */
+  background-color: red; /* Sets the background color of stave lines to red. */
+}
+
+/* Styles for elements with the class .stave-button */
+.stave-button {
+  width: 30px; /* Sets the width of stave buttons to 30px. */
+  height: 30px; /* Sets the height of stave buttons to 30px. */
+  transform: translateX(100%); /* Initially moves the buttons 100% of their width to the right. */
+  transition: transform 0.3s ease; /* Adds a smooth transition effect to the transform property. */
+}
+
+/* Styles for elements with the class .blink-animation */
+/* Applied dynamically using JavaScript */
+/* Adds a blinking animation to elements with this class */
+.blink-animation {
+  animation: blink 0.5s infinite; /* Applies the 'blink' animation with infinite loop. */
+}
+
+/* Keyframes animation named 'blink' */
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.5; /* Sets opacity to 0.5 at the start and end of the animation. */
+  }
+  50% {
+    opacity: 1; /* Sets opacity to 1 at the midpoint of the animation. */
+  }
+}

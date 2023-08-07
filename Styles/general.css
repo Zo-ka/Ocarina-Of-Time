@@ -1,0 +1,17 @@
+/* Styles for the entire body element of the HTML document. */
+body {
+  background-color: #1F1F1F; /* Sets the background color of the body to a dark gray color. */
+  color: white; /* Sets the text color within the body to white. */
+
+  /* Flexbox properties to control the layout of content within the body. */
+  display: flex; /* Uses flexbox for layout. */
+  justify-content: center; /* Horizontally centers content within the flex container. */
+  align-items: center; /* Vertically centers content within the flex container. */
+  flex-direction: column; /* Arranges the flex items in a column layout. */
+  height: 100vh; /* Sets the height of the body to 100% of the viewport height. */
+}
+
+/* Styles for all <p> (paragraph) elements within the HTML document. */
+p {
+  letter-spacing: 2px; /* Adds 2 pixels of space between each letter in the text of <p> elements. */
+}

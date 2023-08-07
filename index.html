@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ocarina</title>
+    <!-- Links to external CSS stylesheets -->
+    <link rel="stylesheet" href="Styles/display.css">
+    <link rel="stylesheet" href="Styles/buttons.css">
+    <link rel="stylesheet" href="Styles/general.css">
+  </head>
+  <body>
+
+    <!-- Displays the song name using an <p> element with the id "song-name" -->
+    <p id="song-name">Play Something</p>
+
+    <!-- Container for the ocarina staves and lines -->
+    <div class="ocarina-display">
+      <!-- Image for the stave -->
+      <img class="stave-image" src="Graphics/stave.png" alt="">
+      <!-- Container for the stave lines and buttons -->
+      <div class="stave">
+        <div class="note-buttons"></div>
+      </div>
+      <!-- Stave lines -->
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+      <div class="line line4"></div>
+    </div>
+
+    <!-- Container for the ocarina buttons -->
+    <!-- Note: These buttons can be replaced with Twitch's API for input -->
+    <div class="ocarina-buttons">
+      <img id="upButton" src="/Graphics/UP.png" alt="Up">
+      <img id="downButton" src="Graphics/DOWN.png" alt="Down">
+      <img id="leftButton" src="Graphics/LEFT.png" alt="Left">
+      <img id="rightButton" src="Graphics/RIGHT.png" alt="Right">
+      <img id="aButton" src="Graphics/A.png" alt="A">
+    </div>
+
+    <!-- JavaScript script for interactivity -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
